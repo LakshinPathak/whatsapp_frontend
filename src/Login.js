@@ -12,7 +12,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://localhost:5000/users/login', {
+      const response = await fetch('https://whatsapp-backend-hdr6.onrender.com/users/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
@@ -33,7 +33,7 @@ function Login() {
 
   const handleSignup = async () => {
     try {
-      const response = await fetch('http://localhost:5000/users/register', {
+      const response = await fetch('https://whatsapp-backend-hdr6.onrender.com/users/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
