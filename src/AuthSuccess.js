@@ -9,7 +9,7 @@ function AuthSuccess() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch('http://localhost:5000/auth/user', {
+        const response = await fetch('https://whatsapp-backend-new.onrender.com/auth/user', {
           credentials: 'include', // Include session cookies
         });
         if (response.ok) {
